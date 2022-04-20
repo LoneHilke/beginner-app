@@ -18,7 +18,6 @@ def index(request):
 
 
 def meetup_details(request, meetup_slug):
-    print(meetup_slug)
     selected_meetup = {
         'title': 'A first Meetup', 
         'description': 'This is the first test',
@@ -37,3 +36,4 @@ def meetup_details(request, meetup_slug):
 
 
     # fra https://www.youtube.com/watch?v=t7DrJqcUviA&list=RDCMUCSJbGtTlrDami-tDGPUV9-w&index=3
+    # kommet til 1:30:19
