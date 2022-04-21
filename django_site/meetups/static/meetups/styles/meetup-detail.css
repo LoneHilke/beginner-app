@@ -38,7 +38,7 @@ article {
   }
   
   #details > p {
-    color: #665386;
+    color: #128672;
     padding: 1rem;
     border-radius: 4px;
     max-width: 80%;
@@ -50,7 +50,7 @@ article {
   }
   
   #details footer a {
-    color: #350490;
+    color: #21ad2f;
     text-decoration: none;
     font-weight: bold;
   }

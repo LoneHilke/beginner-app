@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block title %}
-    {{ meetup_title }}
+    {{ meetup.title }}
 {% endblock %}
 
 {%block site_css %}
@@ -11,24 +11,24 @@
 {% endblock %}
 
 {% block main_heading %}
-    {{ meetup_title }}
+    {{ meetup.title }}
 {% endblock %}
 
 {% block body %}
 
 {% if meetup_found  %}
 <article>
-    <img src="" alt="">
+    <img id="main-image" src="{{ meetup.image.url }}" alt="{{ meetup.title }}">
 
     <section id="location">
-        <h2>Meetup Location</h2>
-        <address>This meetup takesplace in <span>LOCATION</span> (ADDRESS).</address>
+        <h2>Side Location</h2>
+        <address>Denne side hører til <span>{{ meetup.location.name }}</span> ({{ meetup.location.address }}).</address>
 
     </section>
 
     <section id="details">
-        <h2>What is this meetup about?</h2>
-        <p>{{ meetup_description }}</p>
+        <h2>Denne side fortæller om...</h2>
+        <p>{{ meetup.description }}</p>
         <footer>
             <p>Mangler flere informationer, <a href="">kontakt os.</a> Men kun seriøse henvendelser</p>
         </footer>
