@@ -21,7 +21,7 @@ Her vil komme nogle kreative ideer
             <h2>Her kommer ideerne</h2>
             <ol>
                 {% for meetup_item in meetups %}
-                    {% include 'meetups/include/meetup-item.html' with title=meetup_item.title image=meetup_item.image.url location='perler' slug=meetup_item.slug %}
+                    {% include 'meetups/include/meetup-item.html' with title=meetup_item.title image=meetup_item.image.url location='perler' slug=meetup_item.slug participant='email' %}
                 {% endfor %}
             </ol>
         </section>
